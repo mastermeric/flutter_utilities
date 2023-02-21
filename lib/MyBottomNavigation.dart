@@ -31,8 +31,8 @@ class _MyBottomNavigationState extends State<MyBottomNavigation> {
             label: "person",
             backgroundColor: Colors.orange),
         BottomNavigationBarItem(
-            icon: Icon(Icons.person),
-            label: "person",
+            icon: Icon(Icons.phone),                        
+            label:"phone",
             backgroundColor: Colors.orange),
       ],
       onTap: (value) {
