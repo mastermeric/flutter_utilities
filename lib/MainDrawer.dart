@@ -16,7 +16,7 @@ class MainDrawer extends StatelessWidget {
                 SafeArea(
                   child: Container(
                     width: 100,
-                    height: 100,
+                    height: 100,                    
                     decoration: BoxDecoration(
                       shape: BoxShape.circle,
                       image: DecorationImage(

@@ -25,14 +25,15 @@ class _HaberListesiDinamikState extends State<HaberListesiDinamik> {
       //   List tagObjs = jsonResponse.map((tagJson) => new Haber.fromJson(tagJson)).toList();
 
       //Lokal JSON dosyadan oku...
-      var jsonText = await rootBundle.loadString('assets/images/Country.json');
+      var jsonText = await rootBundle.loadString('assets/Country.json');
       var jsonResponse = convert.jsonDecode(jsonText);
       tagObjs = jsonResponse.map((i) => Country.fromJson(i)).toList();
 
     } catch (exception) {
       if (kDebugMode) {
-        print("ERROR at exception : " + exception.toString());
+        print("ERROR at fetchNotes : " + exception.toString());
       }
+      throw Exception("ERROR at fetchNotes : " + exception.toString());
     }
 
     return tagObjs;

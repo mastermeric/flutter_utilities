@@ -23,6 +23,7 @@ linter:
   # producing the lint.
   rules:
     prefer_interpolation_to_compose_strings: false
+    ignore: prefer_const_constructors
 
 
 # Additional information about this file can be found at

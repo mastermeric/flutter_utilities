@@ -94,6 +94,7 @@ class AlertDialogPage extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
               FloatingActionButton(
+                heroTag: "myTag1",
                 child: Text("Blurry Alert"),
                 onPressed: () {
                 _showDialogBlurry(context);
@@ -101,6 +102,7 @@ class AlertDialogPage extends StatelessWidget {
             ),
             SizedBox(width:50),
             FloatingActionButton(
+              heroTag: "myTag2",
               child: Text("Simple Alert"),
               onPressed: () {
                 _showSimpleDialog(context);
