@@ -34,6 +34,10 @@ class _MyBottomNavigationState extends State<MyBottomNavigation> {
             icon: Icon(Icons.phone),                        
             label:"phone",
             backgroundColor: Colors.orange),
+        BottomNavigationBarItem(
+            icon: Icon(Icons.apple),                        
+            label:"apple",
+            backgroundColor: Colors.orange),
       ],
       onTap: (value) {
         setState(() {
@@ -55,9 +59,12 @@ class _MyBottomNavigationState extends State<MyBottomNavigation> {
             case 4:
               Navigator.pushNamed(context, "/AlertDialogPage");
               break;
+            case 5:
+              Navigator.pushNamed(context, "/modal_progress_hud_nsn");
+              break;
           }
 
-/*          Text("Home",style: TextStyle(fontSize: 18, color: Colors.black54)),onTap: () {Navigator.of(context).pushNamed("/Home");},),
+/*        Text("Home",style: TextStyle(fontSize: 18, color: Colors.black54)),onTap: () {Navigator.of(context).pushNamed("/Home");},),
           Text("NinjaCard",style: TextStyle(fontSize: 18, color: Colors.black54)),onTap: () {Navigator.of(context).pushNamed("/NinjaCard");},),
           Text("LoginScreen",style: TextStyle(fontSize: 18, color: Colors.black54)),onTap: () {Navigator.of(context).pushNamed("/LoginScreen");},),
           Text("AlertDialogPage",style: TextStyle(fontSize: 18, color: Colors.black54)),onTap: () {Navigator.of(context).pushNamed("/AlertDialogPage");},),*/

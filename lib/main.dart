@@ -10,6 +10,7 @@ import 'LoginPage.dart';
 import 'NinjaCard.dart';
 //import 'TensorFlowTEST.dart';
 import 'CustomDateTimePicker.dart';
+import 'modal_progress_hud_nsn.dart';
 
 List<CameraDescription>? cameras;
 
@@ -31,6 +32,8 @@ Future<void> main() async {
 
   runApp(new MaterialApp(
     initialRoute: '/',
+
+    //Route tanımları burada..
     routes: {
       '/': (context) => HomePage(), // base root. home: yerine gecer. diger sayfalarda "<--" isareti buna gore cikar
       '/Home': (context) => HomePage(),
@@ -41,6 +44,7 @@ Future<void> main() async {
       '/LoginPage': (context) => LoginPage(),
       //'/TensorFlowTEST': (context) => TensorFlowTEST(kameraListesi),
       '/CustomDateTimePicker': (context) => CustomDateTimePicker(),
+      '/modal_progress_hud_nsn': (context) => modal_progress_hud_nsn(onSignIn: () => print('login successful!'),),
     },
     //home: HomePage()
     //home: AlertDialogPage(),
